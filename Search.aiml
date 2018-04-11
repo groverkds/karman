@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<aiml>
+
+  <category>
+    <pattern>TELL ME ABOUT *</pattern>
+    <template>FUN_SEARCH <star  /></template>
+  </category>
+  <category>
+  	<pattern>WHAT IS THE MEANING OF *</pattern>
+  	<template>FUN_SEARCH <star/></template>
+  </category>
+    <category>
+  	<pattern>TELL ME THE MEANING OF *</pattern>
+  	<template>FUN_SEARCH <star/></template>
+  </category>
+  <category>
+    <pattern>WHAT IS *</pattern>
+    <template>FUN_SEARCH <star/></template>
+  </category>
+  <category>
+  	<pattern>WHO IS THE *</pattern>
+  	<template>FUN_PERSON_SEARCH <star/></template>
+  </category>
+  <category>
+    <pattern>WHERE IS *</pattern>
+    <template>FUN_PERSON_SEARCH <star/></template>
+  </category>
+  <category>
+  	<pattern>WHO IS *</pattern>
+  	<template>FUN_PERSON_SEARCH <star/></template>
+  </category>
+  <category>
+  	<pattern>WHAT DO YOU MEAN BY *</pattern>
+  	<template>FUN_DICT <star/></template>
+  </category>
+  <category>
+  	<pattern>TELL ME ABOUT *</pattern>
+  	<template>FUN_DICT <star/></template>
+  </category>
+
+
+
+  <category>
+    <pattern>* TELL ME ABOUT *</pattern>
+    <template>FUN_SEARCH <star index='2'/></template>
+  </category>
+  <category>
+    <pattern>* WHAT IS THE MEANING OF *</pattern>
+    <template>FUN_SEARCH <star index='2'/></template>
+  </category>
+    <category>
+    <pattern>* TELL ME THE MEANING OF *</pattern>
+    <template>FUN_SEARCH <star index='2'/></template>
+  </category>
+  <category>
+    <pattern>* WHAT IS *</pattern>
+    <template>FUN_SEARCH <star index='2'/></template>
+  </category>
+  <category>
+    <pattern>* WHO IS THE *</pattern>
+    <template>FUN_PERSON_SEARCH <star index='2'/></template>
+  </category>
+  <category>
+    <pattern>* WHERE IS *</pattern>
+    <template>FUN_PERSON_SEARCH <star index='2'/></template>
+  </category>
+  <category>
+    <pattern>* WHO IS *</pattern>
+    <template>FUN_PERSON_SEARCH <star index='2'/></template>
+  </category>
+  <category>
+    <pattern>* WHAT DO YOU MEAN BY *</pattern>
+    <template>FUN_DICT <star index='2'/></template>
+  </category>
+  <category>
+    <pattern>* TELL ME ABOUT *</pattern>
+    <template>FUN_DICT <star index='2'/></template>
+  </category>
+</aiml>

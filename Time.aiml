@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<aiml>
+	
+	<category>
+		<pattern>HELLO * </pattern>
+		<template> Hello User</template>
+	</category>
+	<!--time related queries-->
+	<category>
+		<pattern>WHAT IS THE TIME</pattern>
+		<template>FUN_NOW_TIME</template>
+	</category><category>
+		<pattern>WHAT IS THE TIME</pattern>
+		<template>FUN_NOW_TIME</template>
+	</category>
+	<category>
+		<pattern>* WHAT IS THE TIME *</pattern>
+		<template>FUN_NOW_TIME</template>
+	</category>
+	<category>
+		<pattern>* WHAT IS THE TIME *</pattern>
+		<template>FUN_NOW_TIME</template>
+	</category>
+	
+	<category>
+		<pattern>* WHAT IS THE TIME *</pattern>
+		<template>FUN_NOW_TIME</template>
+	</category>
+	<category>
+		<pattern>* WHAT IS _ TIME *</pattern>
+		<template>FUN_NOW_TIME</template>
+	</category>
+	<category>
+		<pattern>TELL ME THE TIME</pattern>
+		<template>FUN_NOW_TIME</template>
+	</category>
+	<category>
+		<pattern>* TELL ME THE TIME *</pattern>
+		<template>FUN_NOW_TIME</template>
+	</category>
+	<category>
+		<pattern>* TELL ME THE TIME *</pattern>
+		<template>FUN_NOW_TIME TIME</template>
+	</category>
+	<category>
+		<pattern>WHAT DAY IS TODAY</pattern>
+		<template>FUN_NOW_TIME DAY</template>
+	</category>
+
+	<category>
+		<pattern>WHAT MONTH IS IT</pattern>
+		<template>FUN_NOW_TIME MONTH</template>
+	</category>
+	<category>
+		<pattern>WHAT YEAR IS IT</pattern>
+		<template>FUN_NOW_TIME YEAR</template>
+	</category>
+	<category>
+		<pattern>* WHAT DAY IS TODAY</pattern>
+		<template>FUN_NOW_TIME DAY</template>
+	</category>
+
+	<category>
+		<pattern>* WHAT MONTH IS IT</pattern>
+		<template>FUN_NOW_TIME MONTH</template>
+	</category>
+	<category>
+		<pattern>* WHAT YEAR IS IT</pattern>
+		<template>FUN_NOW_TIME YEAR</template>
+	</category>
+	<category>
+		<pattern>WHAT DAY IS TODAY *</pattern>
+		<template>FUN_NOW_TIME DAY</template>
+	</category>
+
+	<category>
+		<pattern>WHAT MONTH IS IT *</pattern>
+		<template>FUN_NOW_TIME MONTH</template>
+	</category>
+	<category>
+		<pattern>WHAT YEAR IS IT *</pattern>
+		<template>FUN_NOW_TIME YEAR</template>
+	</category>
+	<category>
+		<pattern>* WHAT DAY IS TODAY *</pattern>
+		<template>FUN_NOW_TIME DAY</template>
+	</category>
+	<category>
+		<pattern>* WHAT MONTH IS IT *</pattern>
+		<template>FUN_NOW_TIME MONTH</template>
+	</category>
+	<category>
+		<pattern>* WHAT YEAR IS IT *</pattern>
+		<template>FUN_NOW_TIME YEAR</template>
+	
+	</category>
+		<category>
+		<pattern>TELL ME TODAYS DAY</pattern>
+		<template>FUN_NOW_TIME DAY</template>
+	</category>
+	<category>
+		<pattern>* TELL ME TODAYS DAY</pattern>
+		<template>FUN_NOW_TIME DAY</template>
+	</category>
+	<category>
+		<pattern>TELL ME TODAYS DAY *</pattern>
+		<template>FUN_NOW_TIME DAY</template>
+	</category>
+	<category>
+		<pattern>* TELL ME TODAYS DAY *</pattern>
+		<template>FUN_NOW_TIME DAY</template>
+	</category>
+
+
+	<category>
+		<pattern>DAYS UNTIL * / * / *</pattern>
+		<template>FUN_TIME_DIFF <star index="1"/> <star index="2"/> <star index="3"/></template>
+	</category>
+	<category>
+		<pattern>DAYS UNTIL * - * - *</pattern>
+		<template>FUN_TIME_DIFF <star index="1"/> <star index="2"/> <star index="3"/></template>
+	</category>
+		<category>
+		<pattern>DAYS UNTIL * \ * \ *</pattern>
+		<template>FUN_TIME_DIFF <star index="1"/> <star index="2"/> <star index="3"/></template>
+	</category>
+	<category>
+		<pattern>HOW MANY DAYS UNTIL * \/ * \/ *</pattern>
+		<template>FUN_TIME_DIFF <star index="1"/> <star index="2"/> <star index="3"/></template>
+	</category>
+	<category>
+		<pattern>HOW MANY DAYS UNTIL * * *</pattern>
+		<template>FUN_TIME_DIFF <star index="1"/> <star index="2"/> <star index="3"/></template>
+	</category>
+	<category>
+		<pattern>HOW MANY DAYS UNTIL * * *</pattern>
+		<template>FUN_TIME_DIFF <star index="1"/> <star index="2"/> <star index="3"/></template>
+	</category>
+	<category>
+		<pattern>DAYS UNTIL * TH OF * TH MONTH AND YEAR *</pattern>
+		<template>FUN_TIME_DIFF <star index="1"/> <star index="2"/> <star index="3"/></template>
+	</category>
+	<category>
+		<pattern>HOW MANY DAYS UNTIL * TH OF * TH MONTH AND YEAR *</pattern>
+		<template>FUN_TIME_DIFF <star index="1"/> <star index="2"/> <star index="3"/></template>
+	</category>
+	<category>
+		<pattern>WHAT DAY IS IT</pattern>
+		<template>FUN_NOW_TIME DAY</template>
+	</category>
+		<category>
+		<pattern>WHAT DAY IS IT *</pattern>
+		<template>FUN_NOW_TIME DAY</template>
+	</category>
+	<category>
+		<pattern>* WHAT DAY IS IT</pattern>
+		<template>FUN_NOW_TIME DAY</template>
+	</category>
+	<category>
+		<pattern>* WHAT DAY IS IT *</pattern>
+		<template>FUN_NOW_TIME DAY</template>
+	</category>
+</aiml>

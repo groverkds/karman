@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<aiml>
+	<category>
+		<pattern>TOSS</pattern>
+		<template>
+			<random>
+				<li><srai>TAILS</srai></li>
+				<li><srai>HEADS</srai></li>
+			</random>
+		</template>
+	</category>
+	<category>
+		<pattern>TAILS</pattern>
+		<template>
+			<random>
+				<li>Tails.</li>
+				<li>It's tails.</li>
+				<li>You got tails.</li>
+				<li>Tails, it is.</li>
+			</random>
+		</template>
+	</category>
+	<category>
+		<pattern>HEADS</pattern>
+		<template>
+			<random>
+				<li>Heads.</li>
+				<li>It's heads.</li>
+				<li>You got heads.</li>
+				<li>Heads, it is.</li>
+			</random>
+		</template>
+	</category>
+	<category>
+		<pattern>FLIP A COIN</pattern>
+		<template><srai>TOSS</srai></template>
+	</category>
+	<category>
+		<pattern>TOSS A COIN</pattern>
+		<template><srai>TOSS</srai></template>
+	</category>
+	<category>
+		<pattern>* TOSS A COIN</pattern>
+		<template><srai>TOSS</srai></template>
+	</category>
+		<category>
+		<pattern>* FLIP A COIN</pattern>
+		<template><srai>TOSS</srai></template>
+	</category>
+	<category>
+		<pattern>HEADS OR TAILS</pattern>
+		<template><srai>TOSS</srai></template>
+	</category>
+	<category>
+		<pattern>* HEADS OR TAILS</pattern>
+		<template><srai>TOSS</srai></template>
+	</category>
+</aiml>

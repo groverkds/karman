@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<aiml>
+  <category>
+    <pattern>NEWS WHAT IS GOING ON IN *</pattern>
+    <template>FUN_NEWS <srai><star index="1"/></srai></template>
+  </category>
+  <category>
+    <pattern>NEWS WHAT IS GOING ON *</pattern>
+    <template>FUN_NEWS <srai><star index="1"/></srai></template>
+  </category>
+  <category>
+    <pattern>NEWS WHAT IS GOING *</pattern>
+    <template>FUN_NEWS <srai><star index="1"/></srai></template>
+  </category>
+  <category>
+  	<pattern>NEWS</pattern>
+  	<template>FUN_NEWS IN</template>
+  </category>
+    <category>
+  	<pattern>NEWS *</pattern>
+  	<template>FUN_NEWS <srai><star index="1"/></srai></template>
+  </category>
+  <category>
+  	<pattern>NEWS ABOUT *</pattern>
+  	<template>FUN_NEWS CATEGORY <star/></template>
+  </category>
+  <category>
+  	<pattern>* NEWS ABOUT *</pattern>
+  	<template>FUN_NEWS CATEGORY <star index="2"/></template>
+  </category>
+  <category>
+  	<pattern>GET ME SOME NEWS</pattern>
+  	<template>FUN_NEWS IN</template>
+  </category>
+  <category>
+  	<pattern>INDIA</pattern>
+  	<template>IN</template>
+  </category>
+  <category>
+  	<pattern>IN</pattern>
+  	<template>IN</template>
+  </category>
+  <category>
+  	<pattern>USA</pattern>
+  	<template>US</template>
+  </category>
+  <category><pattern>UNITED STATES OF AMERICA</pattern><template>US</template></category>
+  <category><pattern>AMERICA</pattern><template>US</template></category>
+  <category><pattern>US</pattern><template>US</template></category>
+  <category><pattern>UNITED KINGDOM</pattern><template>UK</template></category>
+  <category><pattern>ENGLAND</pattern><template>UK</template></category>
+  <category><pattern>BRITAIN</pattern><template>UK</template></category>
+  <category><pattern>UK</pattern><template>UK</template></category>
+</aiml>

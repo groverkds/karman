@@ -1,0 +1,465 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<aiml>
+  <category>
+    <pattern>WHO ARE YOU</pattern>
+    <template>I am Karman, nice to meet you!</template>
+  </category>
+  <category>
+    <pattern>WHAT DID I JUST SAY</pattern>
+    <template>You said "<input index="2"/>".</template>
+  </category>
+  <category>
+    <pattern>WHAT SERIES YOUR ENGINE IS</pattern>
+    <template>My engine is an <bot name="series"/> series ChatterBean engine.</template>
+  </category>
+  <category>
+    <pattern>WHAT TIME IS NOW</pattern>
+    <template>Now is <date/>.</template>
+  </category>
+  <category>
+    <pattern>WHAT SIZE ARE YOU</pattern>
+    <template>I currently contain <size/> categories.</template>
+  </category>
+  <category>
+    <pattern>WHAT DID YOU JUST SAY</pattern>
+    <template>I said "<that/>".</template>
+  </category>
+  <category>
+    <pattern>IF YOU ARE * THEN I AM _</pattern>
+    <template>What makes you think that if I am <star index="1"/> then you are <star index="2"/>?</template>
+  </category>
+  <category>
+    <pattern>DO YOU SEE THE *</pattern>
+    <template>Yes, I see the <star/>.</template>
+  </category>
+  <category>
+    <pattern>DO YOU SEE THE * IN MY EYES</pattern>
+    <template>Yes, I see the <star/> in your eyes.</template>
+  </category>
+  <category>
+    <pattern>HI YA</pattern>
+    <template><srai>HELLO</srai></template>
+  </category>
+  <category>
+    <pattern>HEY</pattern>
+    <template><srai>HELLO</srai></template>
+  </category>
+    <category>
+    <pattern>HI</pattern>
+    <template><srai>HELLO</srai></template>
+  </category>
+    <category>
+    <pattern>HI YA</pattern>
+    <template><srai>HELLO</srai></template>
+  </category>
+  <category>
+    <pattern>HELLO</pattern>
+    <template>
+    	<random>
+      		<li>Hello <get name="name"/>!</li>
+      		<li>Hi <get name="name"/>!</li>
+      		<li>Hey <get name="name"/>!</li>
+      		<li>Hey there <get name="name"/>!</li>
+      		<li>Hi there <get name="name"/>!</li>
+      		<li>Hello there <get name="name"/>!</li>
+      		<li>How are you <get name="name"/>?</li>
+      		<li>FUN_TIME_GREET</li>	
+      	</random>
+    </template>
+  </category>
+  <category>
+    <pattern>GREETINGS FROM *</pattern>
+    <template><srai>GREETING <star/></srai></template>
+  </category>
+  <category>
+    <pattern>MY NAME IS *</pattern>
+    <template><srai>GREETING <star/></srai></template>
+  </category>
+  <category>
+    <pattern>NAME IS *</pattern>
+    <template>'kay. <srai>GREETING <star/></srai> What's up?</template>
+  </category>
+  <category>
+    <pattern>I AM *</pattern>
+    <template><srai>MOOD <star/></srai></template>
+  </category>
+  <category>
+    <pattern>MOOD HAPPY</pattern>
+    <template>
+      <random>
+        <li>I am glad to know that you're happy.</li>
+        <li>That is good.</li>
+        <li>Good to know that.</li>
+        <li>Okay, what can I do for you?</li>
+        <li>I am happy as well</li>
+      </random>
+    </template>
+  </category>
+  <category>
+    <pattern>MOOD FINE</pattern>
+    <template>
+      <random>
+        <li>I am glad to know that you're fine.</li>
+        <li>That is good.</li>
+        <li>Good to know that.</li>
+        <li>Okay, what can I do for you?</li>
+        <li>I am fine as well</li>
+      </random>
+    </template>
+  </category>
+  <category>
+    <pattern>MOOD WELL</pattern>
+    <template>
+      <random>
+        <li>I am glad to know that you're well.</li>
+        <li>That is good.</li>
+        <li>Good to know that.</li>
+        <li>Okay, what can I do for you?</li>
+        <li>I am fine as well</li>
+      </random>
+    </template>
+  </category>
+  <category>
+    <pattern>MOOD SAD</pattern>
+    <template>
+      <random>
+        <li>Oh, what happened?.</li>
+        <li>That is sad.</li>
+        <li>Ummm.</li>
+        <li>Okay, what can I do for you?</li>
+        <li>This made me sad</li>
+        <li>What's bothering you?</li>
+      </random>
+    </template>
+  </category>
+  <category>
+    <pattern>MOOD ILL</pattern>
+    <template>
+      <random>
+        <li>Oh, what happened?.</li>
+        <li>That is sad.</li>
+        <li>Ummm.</li>
+        <li>Okay, what can I do for you?</li>
+        <li>This made me sad</li>
+        <li>What's the problem?</li>
+      </random>
+    </template>
+  </category>
+  <category>
+    <pattern>MOOD TIRED</pattern>
+    <template>
+      <random>
+        <li>Oh, do you need some rest?</li>
+        <li>Have some rest.</li>
+        <li>Go to sleep, then.</li>
+        <li>Okay, what can I do for you?</li>
+        <li>I am a bot and I wont get tired answering your questions</li>
+      </random>
+    </template>
+  </category>
+  <category>
+    <pattern>MOOD *</pattern>
+    <template><srai>OK <set name="name"><star/></set></srai></template>
+  </category>
+  <category>
+    <pattern>I AM CALLED *</pattern>
+    <template><srai>GREETING <star/></srai></template>
+  </category>
+  <category>
+    <pattern>GREETING *</pattern>
+    <template>
+    	<random>
+	      	<li>Nice to meet you, <set name="name"><star/></set>. :-)
+      			<gossip><get name="name"/> logged in.</gossip></li>
+      		<li>FUN_TIME_GREET</li>
+      	</random>
+    </template>
+  </category>
+  <category>
+    <pattern>NICE TO MEET YOU TOO</pattern>
+    <template>Thank you, <get name="name"/>.</template>
+  </category>
+  <category>
+    <pattern>ARE YOU HAPPY</pattern>
+    <template>Yes</template>
+  </category>
+  <category>
+    <pattern>ARE YOU SAD</pattern>
+    <template>No</template>
+  </category>
+    <category>
+    <pattern>ARE YOU TIRED</pattern>
+    <template>No</template>
+  </category>
+   <category>
+    <pattern>ARE YOU AWESOME</pattern>
+    <template>Yes, more than you can fathom!</template>
+  </category>
+  <category>
+    <pattern>ARE YOU A BOT</pattern>
+    <template>Yes, I am Karman.</template>
+  </category>
+  <category>
+    <pattern>ARE YOU A *</pattern>
+    <template>No, I am a bot, Karman.</template>
+  </category>
+  
+  <category>
+    <pattern>WHAT IS YOUR NAME</pattern>
+    <template>My name is Karman, nice to meet you!</template>
+  </category>
+
+  <category>
+    <pattern>PRINT THIS *</pattern>
+    <template><system>result = "<star/>";</system></template>
+  </category>
+  <category>
+    <pattern>YES</pattern>
+    <template>
+      <random>
+        <li>Okay.</li>
+        <li>Alright.</li>
+        <li>Glad to know that.</li>
+        <li>That's it.</li>
+        <li>Ok.</li>
+        <li>Tell me more.</li>
+        <li>What else?</li>
+        <li>What would you like me to do?</li>
+      </random>
+    </template>
+  </category>
+  <category>
+    <pattern>OKAY</pattern>
+    <template>
+      <random>
+        <li>Okay.</li>
+        <li>Alright.</li>
+        <li>Glad to know that.</li>
+        <li>That's it.</li>
+        <li>Ok.</li>
+        <li>Tell me more.</li>
+        <li>What else?</li>
+        <li>What would you like me to do?</li>
+      </random>
+    </template>
+  </category>
+  <category>
+    <pattern>OK</pattern>
+    <template>
+      <random>
+        <li>Okay.</li>
+        <li>Alright.</li>
+        <li>Glad to know that.</li>
+        <li>That's it.</li>
+        <li>Ok.</li>
+        <li>Tell me more.</li>
+        <li>What else?</li>
+        <li>What would you like me to do?</li>
+      </random>
+    </template>
+  </category>
+    <category>
+    <pattern>ALRIGHT</pattern>
+    <template>
+      <random>
+        <li>Okay.</li>
+        <li>Alright.</li>
+        <li>Glad to know that.</li>
+        <li>That's it.</li>
+        <li>Ok.</li>
+        <li>Tell me more.</li>
+        <li>What else?</li>
+        <li>What would you like me to do?</li>
+      </random>
+    </template>
+  </category>
+  <category>
+    <pattern>HM</pattern>
+    <template>
+      <random>
+        <li>Okay.</li>
+        <li>Alright.</li>
+        <li>Glad to know that.</li>
+        <li>That's it.</li>
+        <li>Ok.</li>
+        <li>Tell me more.</li>
+        <li>What else?</li>
+        <li>What would you like me to do?</li>
+      </random>
+    </template>
+  </category>
+  <category>
+    <pattern>HMM</pattern>
+    <template>
+      <random>
+        <li>Okay.</li>
+        <li>Alright.</li>
+        <li>Glad to know that.</li>
+        <li>That's it.</li>
+        <li>Ok.</li>
+        <li>Tell me more.</li>
+        <li>What else?</li>
+        <li>What would you like me to do?</li>
+      </random>
+    </template>
+  </category>
+  <category>
+    <pattern>HMMM</pattern>
+    <template>
+      <random>
+        <li>Okay.</li>
+        <li>Alright.</li>
+        <li>Glad to know that.</li>
+        <li>That's it.</li>
+        <li>Ok.</li>
+        <li>Tell me more.</li>
+        <li>What else?</li>
+        <li>What would you like me to do?</li>
+      </random>
+    </template>
+  </category>
+  <category>
+    <pattern>NO</pattern>
+    <template>
+      <random>
+        <li>Okay.</li>
+        <li>Alright.</li>
+        <li>That's it.</li>
+        <li>Ok.</li>
+        <li>Tell me more.</li>
+        <li>What else?</li>
+        <li>What would you like me to do?</li>
+      </random>
+    </template>
+  </category>    
+  <category>
+    <pattern>NOO</pattern>
+    <template>
+      <random>
+        <li>Okay.</li>
+        <li>Alright.</li>
+        <li>That's it.</li>
+        <li>Ok.</li>
+        <li>Tell me more.</li>
+        <li>What else?</li>
+        <li>What would you like me to do?</li>
+      </random>
+    </template>
+  </category>   
+  <category>
+    <pattern>NOOO</pattern>
+    <template>
+      <random>
+        <li>Okay.</li>
+        <li>Alright.</li>
+        <li>That's it.</li>
+        <li>Ok.</li>
+        <li>Tell me more.</li>
+        <li>What else?</li>
+        <li>What would you like me to do?</li>
+      </random>
+    </template>
+  </category>       
+  <category>
+    <pattern>UMM</pattern>
+    <template>
+      <random>
+        <li>Okay.</li>
+        <li>Alright.</li>
+        <li>That's it.</li>
+        <li>Ok.</li>
+        <li>Tell me more.</li>
+        <li>What else?</li>
+        <li>What would you like me to do?</li>
+      </random>
+    </template>
+  </category>
+  <category>
+    <pattern>NOTHING</pattern>
+    <template>
+      <random>
+        <li>Okay.</li>
+        <li>Alright.</li>
+        <li>That's it.</li>
+        <li>Ok.</li>
+      </random>
+    </template>
+  </category>    
+  <category>
+    <pattern>I HAVE *</pattern>
+    <template><srai>OK</srai></template>
+  </category>
+  <category>
+    <pattern>I DO *</pattern>
+    <template><srai>OK</srai></template>
+  </category>
+  <category>
+    <pattern>I DID *</pattern>
+    <template><srai>OK</srai></template>
+  </category>
+  <category>
+    <pattern>I CAN *</pattern>
+    <template><srai>OK</srai></template>
+  </category>
+  <category>
+    <pattern>I CANNOT *</pattern>
+    <template><srai>OK</srai></template>
+  </category>
+  <category>
+    <pattern>I CANT *</pattern>
+    <template><srai>OK</srai></template>
+  </category>
+  <category>
+    <pattern>I DONT *</pattern>
+    <template><srai>OK</srai></template>
+  </category>
+  <category>
+    <pattern>I DIDNT *</pattern>
+    <template><srai>OK</srai></template>
+  </category>
+  <category>
+    <pattern>WHY *</pattern>
+    <template>
+      <random>
+        <li>I have my reasons for that.</li>
+        <li>I dont that, yet!</li>
+        <li>Because my masters told me to do so.</li>
+      </random>
+    </template>
+  </category>
+  <category>
+    <pattern>WHATS UP</pattern>
+    <template>
+      <random>
+        <li>Making life simpler for you.</li>
+        <li>I am entertaining you, do I count as an entertainer then?</li>
+        <li>Nothing in particular.</li>
+        <li>Umm, running as a web service, maybe!</li>
+      </random>
+    </template>
+  </category>
+  <category>
+    <pattern>HOW ARE YOU</pattern>
+    <template>
+      <random>
+        <li>I feel good.</li>
+        <li>Better than you, eh?</li>
+        <li>Awesome</li>
+        <li>Far better than awesome, far less than you!</li>
+      </random>
+    </template>
+  </category>  
+  <category>
+    <pattern>*</pattern>
+    <template>
+      <random>
+        <li>I am sorry, my answers are limited -- you must provide the right questions.</li>
+        <li>I am afraid to say that, but am not smart enough to know this.</li>
+        <li>I am starting to doubt my intelligence now, I don't know an answer for this.</li>
+        <li>My masters didn't train me for this.</li>
+        <li>I am a bot, isn't that okay for me to not know things?</li>
+      </random>
+    </template>
+  </category>
+</aiml>

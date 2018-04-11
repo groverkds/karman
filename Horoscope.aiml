@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<aiml>
+	<category>
+		<pattern>HOROSCOPE FOR *</pattern>
+		<template>FUN_HOROSCOPE <star/> DAY </template>
+	</category>
+	<category>
+		<pattern>* HOROSCOPE FOR *</pattern>
+		<template>FUN_HOROSCOPE <star index = "2"/> DAY</template>
+	</category>
+	<category>
+		<pattern>HOW WOULD THE DAY BE FOR A *</pattern>
+		<template>FUN_HOROSCOPE <star/> DAY</template>
+	</category>
+	<category>
+		<pattern>* HOW WOULD THE DAY BE FOR A *</pattern>
+		<template>FUN_HOROSCOPE <star index="2"/> DAY </template>
+	</category>
+	<category>
+		<pattern>DAILY HOROSCOPE FOR *</pattern>
+		<template>FUN_HOROSCOPE <star/> DAY</template>
+	</category>
+	<category>
+		<pattern>* DAILY HOROSCOPE FOR *</pattern>
+		<template>FUN_HOROSCOPE <star index="2"/> DAY </template>
+	</category>
+	<category>
+		<pattern>HOW WOULD THE MONTH BE FOR A *</pattern>
+		<template>FUN_HOROSCOPE <star/> MONTH</template>
+	</category>
+	<category>
+		<pattern>* HOW WOULD THE MONTH BE FOR A *</pattern>
+		<template>FUN_HOROSCOPE <star index="2"/> MONTH </template>
+	</category>
+	<category>
+		<pattern>MONTHLY HOROSCOPE FOR *</pattern>
+		<template>FUN_HOROSCOPE <star/> MONTH</template>
+	</category>
+	<category>
+		<pattern>* MONTHLY HOROSCOPE FOR *</pattern>
+		<template>FUN_HOROSCOPE <star index="2"/> MONTH </template>
+	</category>
+	<category>
+		<pattern>HOW WOULD THE YEAR BE FOR A *</pattern>
+		<template>FUN_HOROSCOPE <star/> YEAR</template>
+	</category>
+	<category>
+		<pattern>* HOW WOULD THE YEAR BE FOR A *</pattern>
+		<template>FUN_HOROSCOPE <star index="2"/> YEAR </template>
+	</category>
+	<category>
+		<pattern>YEARLY HOROSCOPE FOR *</pattern>
+		<template>FUN_HOROSCOPE <star/> YEAR</template>
+	</category>
+	<category>
+		<pattern>* YEARLY HOROSCOPE FOR *</pattern>
+		<template>FUN_HOROSCOPE <star index="2"/> YEAR </template>
+	</category>
+
+
+
+
+
+	<category>
+		<pattern>HOROSCOPES FOR *</pattern>
+		<template>FUN_HOROSCOPE <star/> DAY </template>
+	</category>
+	<category>
+		<pattern>* HOROSCOPES FOR *</pattern>
+		<template>FUN_HOROSCOPE <star index = "2"/> DAY</template>
+	</category>
+	<category>
+		<pattern>DAILY HOROSCOPES FOR *</pattern>
+		<template>FUN_HOROSCOPE <star/> DAY</template>
+	</category>
+	<category>
+		<pattern>* DAILY HOROSCOPES FOR *</pattern>
+		<template>FUN_HOROSCOPE <star index="2"/> DAY </template>
+	</category>
+	<category>
+		<pattern>MONTHLY HOROSCOPES FOR *</pattern>
+		<template>FUN_HOROSCOPE <star/> MONTH</template>
+	</category>
+	<category>
+		<pattern>* MONTHLY HOROSCOPES FOR *</pattern>
+		<template>FUN_HOROSCOPE <star index="2"/> MONTH </template>
+	</category>
+	<category>
+		<pattern>YEARLY HOROSCOPES FOR *</pattern>
+		<template>FUN_HOROSCOPE <star/> YEAR</template>
+	</category>
+	<category>
+		<pattern>* YEARLY HOROSCOPES FOR *</pattern>
+		<template>FUN_HOROSCOPE <star index="2"/> YEAR </template>
+	</category>
+</aiml>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<aiml>
+	<category>
+		<pattern>IS IT GONNA RAIN</pattern>
+		<template>FUN_WEATHER Vadodara</template>
+	</category>
+	<category>
+		<pattern>* IS IT GONNA RAIN</pattern>
+		<template>FUN_WEATHER Vadodara</template>
+	</category>
+	<category>
+		<pattern>* IS IT GONNA RAIN </pattern>
+		<template>FUN_WEATHER Vadodara</template>
+	</category>
+	<category>
+		<pattern>IS IT GONNA RAIN IN *</pattern>
+		<template>FUN_WEATHER <star index="1"/>></template>
+	</category>
+		<category>
+		<pattern>IS IT GOING TO RAIN</pattern>
+		<template>FUN_WEATHER Vadodara</template>
+	</category>
+	<category>
+		<pattern>* IS IT GOING TO RAIN</pattern>
+		<template>FUN_WEATHER Vadodara</template>
+	</category>
+	<category>
+		<pattern>* IS IT GOING TO RAIN </pattern>
+		<template>FUN_WEATHER Vadodara</template>
+	</category>
+	<category>
+		<pattern>IS IT GOING TO RAIN IN *</pattern>
+		<template>FUN_WEATHER <star index="1"/>></template>
+	</category>
+	<category>
+		<pattern>WEATHER</pattern>
+		<template>FUN_WEATHER Vadodara</template>
+	</category>
+	<category>
+		<pattern>WEATHER UPDATES</pattern>
+		<template>FUN_WEATHER Vadodara</template>
+	</category>
+	<category>
+		<pattern>WEATHER UPDATES FROM *</pattern>
+		<template>FUN_WEATHER <star/></template>
+	</category>
+		<category>
+		<pattern>WEATHER UPDATES IN *</pattern>
+		<template>FUN_WEATHER <star/></template>
+	</category>
+	<category>
+		<pattern>WEATHER IN *</pattern>
+		<template>FUN_WEATHER <star/></template>
+	</category>
+	<category>
+		<pattern>WEATHER OF *</pattern>
+		<template>FUN_WEATHER <star/></template>
+	</category>
+	<category>
+		<pattern>DO I NEED AN UMBRELLA</pattern>
+		<template>FUN_WEATHER Vadodara</template>
+	</category>
+	<category>
+		<pattern>* DO I NEED AN UMBRELLA</pattern>
+		<template>FUN_WEATHER Vadodara</template>
+	</category>
+	<category>
+		<pattern>* DO I NEED AN UMBRELLA in *</pattern>
+		<template>FUN_WEATHER <star index="2"/></template>
+	</category>
+	<category>
+		<pattern>DO I NEED AN UMBRELLA IN *</pattern>
+		<template>FUN_WEATHER <star index="1"/></template>
+	</category>
+</aiml>

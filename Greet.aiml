@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<aiml>
+	<category>
+		<pattern>GOOD MORNING</pattern>
+		<template>FUN_TIME_GREET</template>
+	</category>
+	<category>
+		<pattern>GOOD NIGHT</pattern>
+		<template>FUN_TIME_GREET</template>
+	</category>
+	<category>
+		<pattern>GOOD AFTERNOON</pattern>
+		<template>FUN_TIME_GREET</template>
+	</category>
+	<category>
+		<pattern>GOOD EVENING</pattern>
+		<template>FUN_TIME_GREET</template>
+	</category>
+	
+
+	<category>
+		<pattern>* GOOD MORNING</pattern>
+		<template>FUN_TIME_GREET</template>
+	</category>
+	<category>
+		<pattern>* GOOD NIGHT</pattern>
+		<template>FUN_TIME_GREET</template>
+	</category>
+	<category>
+		<pattern>* GOOD AFTERNOON</pattern>
+		<template>FUN_TIME_GREET</template>
+	</category>
+	<category>
+		<pattern>* GOOD EVENING</pattern>
+		<template>FUN_TIME_GREET</template>
+	</category>
+
+
+	<category>
+		<pattern>GOOD MORNING *</pattern>
+		<template>FUN_TIME_GREET</template>
+	</category>
+	<category>
+		<pattern>GOOD NIGHT *</pattern>
+		<template>FUN_TIME_GREET</template>
+	</category>
+	<category>
+		<pattern>GOOD AFTERNOON *</pattern>
+		<template>FUN_TIME_GREET</template>
+	</category>
+	<category>
+		<pattern>GOOD EVENING *</pattern>
+		<template>FUN_TIME_GREET</template>
+	</category>
+
+	<category>
+		<pattern>* GOOD MORNING *</pattern>
+		<template>FUN_TIME_GREET</template>
+	</category>
+	<category>
+		<pattern>* GOOD NIGHT *</pattern>
+		<template>FUN_TIME_GREET</template>
+	</category>
+	<category>
+		<pattern>* GOOD AFTERNOON *</pattern>
+		<template>FUN_TIME_GREET</template>
+	</category>
+	<category>
+		<pattern>* GOOD EVENING *</pattern>
+		<template>FUN_TIME_GREET</template>
+	</category>
+</aiml>

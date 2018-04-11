@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<aiml>
+	<category>
+		<pattern> ADD * AND * </pattern>
+		<template>FUN_CALC add <star index="1"/> <star index="2"/></template>
+	</category>
+		<category>
+		<pattern> ADD * TO * </pattern>
+		<template>FUN_CALC add <star index="1"/> <star index="2"/></template>
+	</category>
+	<category>
+		<pattern> SUBTRACT * FROM * </pattern>
+		<template>FUN_CALC subtract <star index="1"/> <star index="2"/></template>
+	</category>
+	<category>
+		<pattern> MULTIPLY * AND * </pattern>
+		<template>FUN_CALC multiply <star index="1"/> <star index="2"/></template>
+	</category>
+		<category>
+		<pattern> MULTIPLY * WITH * </pattern>
+		<template>FUN_CALC multiply <star index="1"/> <star index="2"/></template>
+	</category>
+		<category>
+		<pattern> MULTIPLY * BY * </pattern>
+		<template>FUN_CALC multiply <star index="1"/> <star index="2"/></template>
+	</category>
+	<category>
+		<pattern> DIVIDE * BY * </pattern>
+		<template>FUN_CALC divide <star index="1"/> <star index="2"/></template>
+	</category>
+	<category>
+		<pattern> DIVIDE * WITH * </pattern>
+		<template>FUN_CALC divide <star index="1"/> <star index="2"/></template>
+	</category>
+	<category>
+		<pattern>CALCULATE *</pattern>
+		<template>FUN_CALC CALCULATOR <star/></template>
+	</category>
+		<category>
+		<pattern>CALC *</pattern>
+		<template>FUN_CALC CALCULATOR <star/></template>
+	</category>
+</aiml>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<aiml>
+	<category>
+		<pattern>JOKE</pattern>
+		<template>
+			<random>
+				<li>Can a kangaroo jump higher than a house? Of course, a house doesn’t jump at all</li>
+				<li> Doctor: "I'm sorry but you suffer from a terminal illness and have only 10 to live."     Patient: "What do you mean, 10? 10 what? Months? Weeks?!"     Doctor: "Nine."</li>
+				<li>A man asks a farmer near a field, “Sorry sir, would you mind if I crossed your field instead of going around it? You see, I have to catch the 4:23 train.”     The farmer says, “Sure, go right ahead. And if my bull sees you, you’ll even catch the 4:11 one.”</li>
+				<li> My dog used to chase people on a bike a lot. It got so bad, finally I had to take his bike away.</li>
+				<li> Mother: "How was school today, Patrick?"     Patrick: "It was really great mum! Today we made explosives!"     Mother: "Ooh, they do very fancy stuff with you these days. And what will you do at school tomorrow?"     Patrick: "What school?"</li>
+				<li>Sleep with an open window tonight! 1400 mosquitos like that. 420 mosquitos commented on it. 210 mosquitos shared this. One mosquito invited for the event. 2800 mosquitos will be attending the event.</li>
+				<li> “My wife suffers from a drinking problem.”     “Oh is she an alcoholic?”     “No, I am, but she’s the one who suffers.”</li>
+				<li>I managed to lose my rifle when I was in the army. I had to pay $855 to cover the loss. I’m starting to understand why a Navy captain always goes down with his ship.</li>
+				<li> Police officer talks to a driver: Your tail light is broken, your tires must be exchanged and your bumper hangs halfway down. That will be 300 dollars.     Driver: Alright, go ahead. They want twice as much as that at the garage.</li>
+				<li>Why did the physics teacher break up with the biology teacher? There was no chemistry.</li>
+				<li>Q. Why do the French like to eat snails so much?     A. They can’t stand fast food.</li>
+				<li> A guest calls the waiter and complains, “How come there are no chairs at our table?!”     The waiter shrugs, “I’m sorry but you only booked one table…”</li>
+				<li> Optimist: The glass is half full.     Pessimist: The glass is half empty.     Mother: Why didn’t you use a coaster!</li>
+				<li> I asked my daughter if she’d seen my newspaper. She told me that newspapers are old school. She said that people use tablets nowadays and handed me her iPad. The fly didn’t stand a chance.</li>
+				<li>I forgot my cell phone when I went to the toilet yesterday. We have 245 tiles.</li>
+				<li> How many gorillas can fit into a car?     Eight.     How many chickens can fit into the car?     None, the car is already full of gorillas.</li>
+				<li> She: I have a doctor’s appointment today but I really don’t want to go…     He: Just call in sick then.</li>
+				<li>A recent scientific study showed that out of 2,293,618,367 people, 94% are too lazy to actually read that number.</li>
+				<li>A boy breaks an old vase at a rich uncle‘s house. The uncle gets extremely angry and yells: “Do you even know how old the vase was? It was from the 17th century!” The boy sagged in relief: “Oh, good that it wasn’t new.”</li>
+				<li>I’ve always thought my neighbors were quite nice people. But then they put a password on their Wi-Fi.</li>
+				<li>A man goes to the lawyer: “What is your fee?”     Lawyer says: “1000 US dollars for 3 questions.”     Man: “Wow - so much! Isn’t it a bit expensive?”     Lawyer: “Yes, what is your third question?”</li>
+				<li> Police officer: “Your car is too heavily overloaded. I simply cannot let you continue like that. I’m going to have to take away your driver’s license.”     Driver: “You’re kidding me, right? The license can only weigh one ounce tops!”</li>
+				<li> When I look at chocolate, I hear two voices in my head.     The first one says: “You need to eat that chocolate.”     The other voice goes: “You heard. Eat the chocolate.”</li>
+				<li>Insurance clerk: "Where were you born, Sir?"     Man: "In the United States."     Insurance clerk: "OK, and which part?"     Man: "My entire body."</li>
+				<li> My wife is a bit weird. She always starts her talking with “Michael, are you listening to me?”</li>
+				<li>A man hired a lawyer when he got sued by his company for embezzlement of many millions. At the beginning of the process, the lawyer kindly reassured him: Don’t worry, you’ll never go to jail with that amount of money. And the lawyer was right. When the man did go to jail eventually, he didn’t have a penny anymore.</li>
+				<li>Just came home from a training session. Two hours on the treadmill did me really good. If only I could somehow stop the constant beeping and the irritated comments of the cashier.</li>
+				<li>Does your dog bite?     Nope.     Oh, so how do you feed him?</li>
+				<li>“Waiter, take your thumb off my schnitzel immediately!”     “Oh yeah? And have it fall down again!?”</li>
+				<li>Do you want to hear a joke backwards?     Yes…     Very good, start laughing.</li>
+				<li> My SMS autocorrect just changed "I’m so concerned with existential anxieties it is difficult to breathe" to "I feel great".</li>
+				<li> The police stops a computer hardware engineer: “Your light isn’t working. You have to get off your bike.”     IT guy: “I tried that but the light still isn’t working.”</li>
+				<li> Bus driver to passenger: Don’t you want to sit down? Passenger: No, I am in a hurry.</li>
+				<li>“Mom, don't get alarmed, but I’m at the hospital.”     “Son, please. You’ve been a surgeon there for 8 years now. Can we start our phone calls differently?</li>
+			</random>
+		</template>
+	</category>
+	<category>
+		<pattern>_ TELL ME A JOKE</pattern>
+		<template><srai>JOKE</srai></template>
+	</category>
+	<category>
+		<pattern>_ MAKE ME LAUGH</pattern>
+		<template><srai>JOKE</srai></template>
+	</category>
+		<category>
+		<pattern>TELL ME A JOKE</pattern>
+		<template><srai>JOKE</srai></template>
+	</category>
+	<category>
+		<pattern>MAKE ME LAUGH</pattern>
+		<template><srai>JOKE</srai></template>
+	</category>
+		<category>
+		<pattern>TICKLE MY FUNNY BONES</pattern>
+		<template><srai>JOKE</srai></template>
+	</category>
+</aiml>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<aiml>
+	<category>
+		<pattern> GET ME QUOTE FOR * </pattern>
+		<template>FUN_STOCK <star id="1"/></template>
+	</category>
+		<category>
+		<pattern> GET ME THE QUOTE FOR * </pattern>
+		<template>FUN_STOCK <star id="1"/></template>
+	</category>
+	<category>
+		<pattern> WHAT IS THE PRICE FOR * </pattern>
+		<template>FUN_STOCK <star id="1"/></template>
+	</category>
+		<category>
+		<pattern> WHAT IS PRICE FOR * </pattern>
+		<template>FUN_STOCK <star id="1"/></template>
+	</category>
+	<category>
+		<pattern> HOW IS * STOCK DOING </pattern>
+		<template>FUN_STOCK <star id="1"/></template>
+	</category>
+
+
+	<category>
+		<pattern>* GET ME QUOTE FOR * </pattern>
+		<template>FUN_STOCK <star index="2"/></template>
+	</category>
+		<category>
+		<pattern>* GET ME THE QUOTE FOR * </pattern>
+		<template>FUN_STOCK <star index="2"/></template>
+	</category>
+	<category>
+		<pattern>* WHAT IS THE PRICE FOR * </pattern>
+		<template>FUN_STOCK <star index="2"/></template>
+	</category>
+		<category>
+		<pattern>* WHAT IS PRICE FOR * </pattern>
+		<template>FUN_STOCK <star index="2"/></template>
+	</category>
+	<category>
+		<pattern>* HOW IS * STOCK DOING </pattern>
+		<template>FUN_STOCK <star index="2"/></template>
+	</category>
+	
+	
+</aiml>

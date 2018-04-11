@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Karman</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="site-style.css" />
+    <link rel="stylesheet" href="input-style.css" />
+    <link rel="stylesheet" href="chat-box.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+    <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="chat.js"></script>
+    <script src="RequestResponse.js"></script>
+    <script src="ChatWindow.js"></script>
+</head>
+
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="50">
+    <div class="chatbox-holder">
+        <div class="chatbox chatbox-min">
+            <div class="chatbox-top">
+                <div class="chatbox-avatar">
+                    <a href="javascript:void(0);">
+                        <i class="fa fa-minus">
+                            <img src="Avatar.png" />
+                        </i>
+                    </a>
+                </div>
+                <div class="chat-partner-name">
+                    <span class="status online"></span>
+                    <a href="javascript:void(0);">
+                        <i class="fa fa-minus">Karman</i>
+                    </a>
+                </div>
+                <div class="chatbox-icons">
+                    <a href="javascript:void(0);">
+                        <i class="fa fa-minus">-</i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="chat-messages" id="conversation">
+                <div class="message-box-holder">
+                    <div class="message-box message-partner">
+                        Hi! I am Karman. What would you like to ask?
+                    </div>
+                </div>
+            </div>
+
+            <div class="chat-input-holder">
+                <textarea class="chat-input" id="clientmessage" onkeypress="submitonenter(event,this)"></textarea>
+                <input type="submit" value="Send" class="message-send" onclick="getResponse()" />
+            </div>
+            <div class="attachment-panel">
+                <a href="#" class="fa fa-thumbs-up"></a>
+                <a href="#" class="fa fa-camera"></a>
+                <a href="#" class="fa fa-video-camera"></a>
+                <a href="#" class="fa fa-image"></a>
+                <a href="#" class="fa fa-paperclip"></a>
+                <a href="#" class="fa fa-link"></a>
+                <a href="#" class="fa fa-trash-o"></a>
+                <a href="#" class="fa fa-search"></a>
+            </div>
+        </div>
+    </div>
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#myPage">
+                    <img class="chatbox-logo" src="Avatar.png" />
+                </a>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="#myPage">Home</a>
+                    </li>
+                    <li>
+                        <a href="#band">About Us</a>
+                    </li>
+                    <li>
+                        <a href="#contact">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="carousel-inner" role="listbox">
+        <div class="item active">
+            <img src="ai.jpeg" alt="New York" width="1200" height="700">
+
+            <div class="carousel-caption">
+                <h1 style="font-size:85px">karman</h1>
+            </div>
+        </div>
+    </div>
+    <div id="band" class="container text-center">
+        <h3>About Us</h3>
+        <p>
+            <em>Eat, Sleep, Code, Develop, Repeat!</em>
+        </p>
+        <p>We are two young enthusiastic 3rd year college students currently working directly from our homes. "Do what is beyond
+            you today" is our moto.
+        </p>
+        <br>
+        <div class="row">
+            <div class="col-sm-4" style="width: 50%">
+                <p class="text-center" style="font-size: 20px">
+                    <strong>Karandeep Singh Grover</strong>
+                </p>
+                <br>
+                <a href="#demo" data-toggle="collapse">
+                    <img src="KD.JPG" class="img-circle person" alt="Random Name" width="255" height="255" style="border-radius: 30%">
+                </a>
+            </div>
+
+            <div class="col-sm-4" style="width: 50%">
+                <p class="text-center" style="font-size: 20px">
+                    <strong>Manav Desai</strong>
+                </p>
+                <br>
+                <a href="#demo2" data-toggle="collapse">
+                    <img src="MKD.jpg" class="img-circle person" alt="Random Name" width="255" height="255" style="border-radius: 30%">
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Container (Contact Section) -->
+    <div id="contact" class="contact-container">
+        <h3 class="contact-container-text">Contact</h3>
+        <p class="text-center">
+            <em>We'd love to hear from you!</em>
+        </p>
+
+        <div class="row">
+            <div class="col-md-4">
+                <p>Do you want us to come to your college? Drop a note.</p>
+                <p>
+                    <span class="glyphicon glyphicon-map-marker"></span>Vadodara, Gujarat, India</p>
+                <p>
+                    <span class="glyphicon glyphicon-phone"></span>Phone: +91 1515151515</p>
+                <p>
+                    <span class="glyphicon glyphicon-envelope"></span>Email: mail@gmail.com</p>
+            </div>
+            <div class="col-md-8">
+                <!--<div class="row">
+                    <div class="col-sm-6 form-group">
+                        <input class="form-control" id="name" name="name" placeholder="Name" type="text" required>
+                    </div>
+                    <div class="col-sm-6 form-group">
+                        <input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
+                    </div>
+                </div>
+                <textarea class="form-control" id="comments" name="comments" placeholder="Comment" rows="5"></textarea>
+                <br>
+                <div class="row">
+                    <div class="col-md-12 form-group">
+                        <button class="btn pull-right" type="submit">Send</button>
+                    </div>
+                </div>-->
+            </div>
+        </div>
+        <br>
+</body>
+
+</html>
