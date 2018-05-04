@@ -1,0 +1,12 @@
+flask
+numpy
+nltk
+datetime
+requests
+json
+xmltodict
+python-aiml
+aiml
+wikipedia
+urllib
+flask_cors
